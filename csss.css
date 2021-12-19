@@ -10,7 +10,7 @@ body {
   margin: 1px;
 }
 body::before {
-  background: url("bg.jpg") no-repeat center;
+  background: url("./BlueStacks/bg.jpg") no-repeat center;
   content: "";
   position: fixed;
   top: 0;
