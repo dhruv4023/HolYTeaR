@@ -1,0 +1,272 @@
+:root {
+  --bord: 3px solid #000;
+}
+html {
+  font-size: 20px;
+  scroll-behavior: smooth;
+}
+/* background-image ----------------------------- */
+body {
+  margin: 1px;
+}
+body::before {
+  background: url("/BlueStacks/pic\ \(3\).jpg") no-repeat center;
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+/* navigation ----------------------------- */
+.cont2{
+  display: flex;
+  position: sticky;
+  background-color: rgba(0, 0, 0, 0.705);
+}
+.main {
+  /* border: var(--bord); */
+  display: flex;
+  top: 0px;
+  width: 100%;
+  display:none;
+  position: fixed;
+  flex-wrap: wrap;
+  /* transform: all 5s ease-out; */
+}
+.h11 {
+  text-shadow: 2px 2px 0 rgb(255, 255, 255);
+  font-size: 8vh;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-grow: 1;
+}
+.nav {
+  font-size: 4vh;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+  flex-grow: 17;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  background-color: rgba(17, 100, 14, 0.685);
+}
+.navul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.menus {
+  padding-left: 1.5vh;
+  padding-right: 1.5vh;
+  border-radius: 30px;
+  /* padding: 0; */
+  text-decoration: none;
+  color: yellow;
+}
+.menus:hover,
+.menus.active
+ {
+  padding-left: 1.5vh;
+  padding-right: 1.5vh;
+  border-radius: 30px;
+  text-decoration: none;
+  color: rgb(112, 112, 27);
+  background-color: yellow;
+  /* border: 3px solid rgb(0, 0, 0); */
+}
+
+.search {
+  flex-grow: 1;
+}
+#search {
+  background-color: yellowgreen;
+  float: right;
+  padding: 0.7vh;
+  padding-left: 2vh;
+  font-size: 3vh;
+  margin-right: 1vw;
+  width: 30vw;
+  min-width: 30vw;
+  border-radius: 30px;
+}
+/* navigation of items---------------------------------------------------- */
+.nav_item{
+  position: fixed;
+  background-color: yellowgreen;
+}
+/* items---------------------------------------------------- */
+.box {
+  margin-top: 1vh;
+  /* min-height: 100vh; */
+  border: 3px solid rgb(3, 2, 2);
+  display: grid;
+  align-items: center;
+  grid-template-columns: 400px 400px;
+  /* grid-template-columns:  repeat(auto-fit, minmax(30vw, 1ft); */
+  grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+  justify-content: center;
+}
+.imgs {
+  /* border: 1px solid rgb(0, 0, 0); */
+  max-height: 97%;
+  margin:auto;
+  /* padding:1vh; */
+  padding:auto;
+  max-width: 97%;
+}
+.header{
+  text-align:center;
+  margin-top: 7vh;
+  font-weight: bold;
+  font-size: 2.2em;
+  text-decoration: underline;
+  color: rgb(158, 158, 158);
+  background-color: rgba(0, 0, 0, 0.733);
+  /* background-image: url('/BlueStacks/Flower/Flower\ \(10\).jpg') */
+}
+/*  contact */
+
+#contact {
+  /* border: 1px solid #000000; */
+  margin: auto;
+  background-color: rgba(153, 205, 50, 0.603);
+  /* border-radius:50px; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* width: 1100; */
+  min-height:71.2vh ;
+  padding: 50px;
+}
+#contact-box {
+  margin: auto;
+}
+#contact-box input {
+  border: 3px solid #000000;
+  border-radius: 6px;
+  width: 50%;
+  text-align: center;
+  background: none;
+  color: #000000;
+  padding: 3px;
+  font-size: 15px;
+  font-weight: bold;
+}
+::placeholder{
+  color: #00000093;
+}
+.form-group {
+  padding: 10px;
+}
+.h-primary {
+  font-size: 3.8rem;
+  padding: 12px;
+  text-align: center;
+}
+.h-secondary {
+  text-align: center;
+  font-size: 2.8rem;
+  padding: 12px;
+}
+.btn {
+  padding: 6px 20px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: brown;
+  color: white;
+  margin: 17px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+p {
+  text-align: center;
+}
+#imgs{
+  height: 200px;
+  width: 150px;
+}
+h2 {
+  background-color: black;
+  border: 0.3vh solid yellowgreen;
+  text-align: center;
+  font-size: 2.4vh;
+  color: white;
+}
+.foot{
+  text-align: center;
+  background-color: rgba(0,0,0);
+  color: white;
+  padding: 1vh;
+  position: sticky;
+  bottom: 0px;
+}
+/* top button */
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 6px; /* Place the button at the bottom of the page */
+  right: 10px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(17, 141, 44); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 6px; /* Some padding */
+  border-radius: 10000px; /* Rounded corners */
+  font-size: 12px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/*-------------------------------------*/ 
+@media (max-width:500px) {
+  *{
+      font-size:22px;
+  }
+  .main{
+      flex-direction: column;
+  }
+  .nav{
+      /* padding: ; */
+      height:30px;
+      /* margin: auto; */
+      padding: 10px;
+      border-radius: 0px;
+  }
+  .navul ul li{
+      margin: 5px;
+  }
+  .navul{
+      margin: auto;
+      padding: 0;
+      justify-content: space-evenly;
+      text-align: center;
+      /* justify-content: center; */
+  }
+  .cont2{
+      flex-direction: column;
+  }
+  .header{
+      font-size: 1.2em;
+  }
+  .h-primary{
+      font-size: 1.5em;
+  }
+  #contact,#contact-box input {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      background: transparent;
+    }
+}
