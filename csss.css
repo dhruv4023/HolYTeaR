@@ -9,8 +9,16 @@ html {
 body {
   margin: 1px;
 }
+#holytear{
+  color:#000;
+  text-decoration: none;
+  
+}
+#holytear:hover{
+  color:rgb(32, 32, 32);
+}
 body::before {
-  background: url("./BlueStacks/bg.jpg") no-repeat center;
+  background: url("./images/bg.jpg") no-repeat center;
   content: "";
   position: fixed;
   top: 0;
@@ -97,6 +105,7 @@ body::before {
   min-width: 30vw;
   border-radius: 30px;
 }
+
 /* navigation of items---------------------------------------------------- */
 .nav_item{
   position: fixed;
@@ -104,9 +113,13 @@ body::before {
 }
 /* items---------------------------------------------------- */
 .box {
+  min-height: 80.7vh;
+  text-align: center;
+  font-size: 10vh;
+  font-weight: bold;
+  color: rgb(38, 0, 255);
+  text-shadow: 2px 2px 0 rgb(255, 255, 255);
   margin-top: 1vh;
-  /* min-height: 100vh; */
-  border: 3px solid rgb(3, 2, 2);
   display: grid;
   align-items: center;
   grid-template-columns: 400px 400px;
@@ -130,7 +143,7 @@ body::before {
   text-decoration: underline;
   color: rgb(158, 158, 158);
   background-color: rgba(0, 0, 0, 0.733);
-  /* background-image: url('/BlueStacks/Flower/Flower\ \(10\).jpg') */
+  /* background-image: url('/images/Flower/Flower\ \(10\).jpg') */
 }
 /*  contact */
 
@@ -143,7 +156,7 @@ body::before {
   align-items: center;
   text-align: center;
   /* width: 1100; */
-  min-height:71.2vh ;
+  min-height:67.8vh ;
   padding: 50px;
 }
 #contact-box {
@@ -212,7 +225,7 @@ h2 {
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
-  bottom: 6px; /* Place the button at the bottom of the page */
+  bottom: 10px; /* Place the button at the bottom of the page */
   right: 10px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
@@ -223,14 +236,16 @@ h2 {
   padding: 6px; /* Some padding */
   border-radius: 10000px; /* Rounded corners */
   font-size: 12px; /* Increase font size */
+  height: 20px;
 }
 
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
 
+
 /*-------------------------------------*/ 
-@media (max-width:500px) {
+@media (max-width:688px) {
   *{
       font-size:22px;
   }
