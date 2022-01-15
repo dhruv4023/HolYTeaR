@@ -12,7 +12,7 @@ activemenu();
 window.addEventListener("scroll", activemenu);
 
 
-// Top button and navigation-----------------------------------------------------------------------
+// Top button and navigation-----------------------------------------------------------------
 //Get the button:
 mybutton = document.getElementById("myBtn");
 nav = document.getElementById("main");

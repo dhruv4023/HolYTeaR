@@ -78,20 +78,25 @@ body::before {
   /* padding: 0; */
   text-decoration: none;
   color: yellow;
+  font-weight: bold;
 }
 .menus:hover,
 .menus.active
- {
+{
+  font-weight: bold;
   padding-left: 1.5vh;
-  padding-right: 1.5vh;
-  border-radius: 30px;
-  text-decoration: none;
-  color: rgb(112, 112, 27);
-  background-color: yellow;
-  /* border: 3px solid rgb(0, 0, 0); */
-}
-
-.search {
+   padding-right: 1.5vh;
+   border-radius: 30px;
+   text-decoration: none;
+   /* border: 3px solid rgb(0, 0, 0); */
+   background-color: yellow;
+   color: rgb(67, 27, 112);
+  }
+  .menus:hover{
+  color: rgb(27, 10, 184);
+  transition: 1s ease-in-out;
+  }
+  .search {
   flex-grow: 1;
 }
 #search {
