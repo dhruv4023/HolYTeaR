@@ -235,6 +235,7 @@ h2 {
   text-align: center;
   flex-grow: 3;
   font-family: cursive;
+  /* justify-content: center; */
   /* border:1px solid tomato; */
 }
 /* top button */
