@@ -260,11 +260,13 @@ h2 {
   background-color: #555; /* Add a dark-grey background on hover */
 }
 
-
 /*-------------------------------------*/ 
 @media (max-width:688px) {
   *{
       font-size:22px;
+  }
+  #clk,#day{
+    display: none;
   }
   .main{
       flex-direction: column;
@@ -301,9 +303,4 @@ h2 {
       padding: 0;
       background: transparent;
     }
-}
-
-
-#clk{
-  color: white;
 }
