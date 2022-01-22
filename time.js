@@ -26,4 +26,4 @@ if (dy < 10){
     dy="0"+dy;
 }
 let yyyy=newDate.getFullYear();
-document.getElementById("day").innerHTML = dy+" "+month[m]+","+yyyy;
+document.getElementById("day").innerHTML = dy + " " + month[m] + "," + yyyy;
